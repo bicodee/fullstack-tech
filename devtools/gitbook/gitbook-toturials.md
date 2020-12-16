@@ -1,6 +1,6 @@
 # GitBook使用教程
 
-## GitBook命令行工具安装
+## 命令行工具安装
 
 ### 安装node.js
 gitbook cli是基于Node.js的命令行工具，需要先下载安装node.js
@@ -52,33 +52,52 @@ GitBook使用简单的目录结构。概要中列出的所有Markdown / Asciidoc
 #### SUMMARY.md
 用于描述章节列表（可选，建议必须），简单可以理解为导航栏，接下来会介绍。
 
-## Gitbook常用命令
-npm install gitbook-cli -g ：安装gitbook-cli；
+## 常用命令
+> npm install gitbook-cli -g ：安装gitbook-cli；
+>
+> gitbook ls ：列出本地安装版本；
+>
+> gitbook current ：列出当前使用版本；
+>
+> gitbook ls-remote ：列出远程可使用版本；
+>
+> gitbook fetch 2.6.9 ：安装2.6.9版本；
+>
+> gitbook uninstall 2.6.9 ：卸载指定版本；
+>
+> gitbook update 2.6.9 ：更新到指定版本，没有指定版本则到最新；
+>
+> gitbook install ：安装当前项目所需插件；
+>
+> gitbook build ：构建成Html文件，默认在_book目录下；
+>
+> gitbook serve：启动服务；
+>
+> gitbook pdf ：输出pdf电子书；
+>
+> gitbook epub：输出epub电子书；
+>
+> gitbook mobi ：输出mobi电子书；
+>
 
-gitbook ls ：列出本地安装版本；
+## 常用工具
 
-gitbook current ：列出当前使用版本；
+1. GitHub
+2. Gitbook Editor
+3. [Typora](https://typora.io/#)
 
-gitbook ls-remote ：列出远程可使用版本；
+## 常见问题
 
-gitbook fetch 2.6.9 ：安装2.6.9版本；
+> ##### 问题1：GitBook生成PDF问题
+> 问题描述：windows 系统 GitBook生成PDF、epub报错Error during ebook generation: 'ebook-convert' 乱码
+>
+> 解决方法：下载[calibre](https://calibre-ebook.com/)并安装，重新执行gitbook pdf命令。
+>
 
-gitbook uninstall 2.6.9 ：卸载指定版本；
-
-gitbook update 2.6.9 ：更新到指定版本，没有指定版本则到最新；
-
-gitbook install ：安装当前项目所需插件；
-
-gitbook build ：构建成Html文件，默认在_book目录下；
-
-gitbook serve：启动服务；
-
-gitbook pdf ：输出pdf电子书；
-
-gitbook epub：输出epub电子书；
-
-gitbook mobi ：输出mobi电子书；
 
 ## 附录
 + [GitBook 官网](https://www.gitbook.com)
 + [GitBook 文档](https://github.com/GitbookIO/gitbook)
++ [Gitbook editor与gitbook，github同步](https://blog.csdn.net/qq_35830949/article/details/79355530)
++ [windows安装gitbook并使用gitbook editor可视化工具](https://www.cnblogs.com/kingsonfu/p/10255123.html)
++ [Typora完全使用详解](https://sspai.com/post/54912/)
